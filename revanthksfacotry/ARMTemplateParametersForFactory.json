@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "revanthksfacotry"
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"ls_database_password": {
+			"value": ""
+		},
+		"ls_datalake_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "dfrevserver.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "dfrevDB"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "anashlamba"
+		},
+		"ls_RestAPI_properties_typeProperties_url": {
+			"value": "https://pokeapi.co/api/v2/pokemon"
+		},
+		"ls_database_properties_typeProperties_server": {
+			"value": "dfrevserver.database.windows.net"
+		},
+		"ls_database_properties_typeProperties_database": {
+			"value": "dfrevDB"
+		},
+		"ls_database_properties_typeProperties_userName": {
+			"value": "anashadmin"
+		},
+		"ls_datalake_properties_typeProperties_url": {
+			"value": "https://dfprostorage9.dfs.core.windows.net/"
+		}
+	}
+}
