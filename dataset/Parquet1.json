@@ -1,0 +1,52 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_datalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Orders",
+				"fileSystem": "sink-destination"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "order_id",
+				"type": "INT32"
+			},
+			{
+				"name": "customer_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "product_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "quantity",
+				"type": "INT32"
+			},
+			{
+				"name": "price",
+				"type": "DECIMAL",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "order_date",
+				"type": "INT96"
+			},
+			{
+				"name": "last_updated",
+				"type": "INT96"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

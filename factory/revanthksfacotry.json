@@ -1,0 +1,15 @@
+{
+	"name": "revanthksfacotry",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "663cb919-885d-4807-8b02-5b70d5ce48b0",
+		"tenantId": "b0dd69df-d0de-4b46-8259-b29bba801749"
+	}
+}
